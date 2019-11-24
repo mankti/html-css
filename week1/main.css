@@ -1,0 +1,25 @@
+h1{color:green;
+margin-bottom:50px;
+text-align:center;}
+h2{color:purple;}
+th, td{padding:0px 0px 12px 0px;}  
+body{background-color:rgb(200 200 200);}
+li{margin-left:-20px;
+  line-height:1.5;}
+.table-header{font-size:24px;
+  text-align:left;
+    color:purple;
+}
+.underline{text-decoration:underline;
+}
+.first_col{width:150px;
+  font-weight:bold;
+vertical-align:top;}
+.indent{margin-left:40px;}
+.programs{font-style:italic;}
+#photo_me{
+  position:absolute;
+  top:120px;
+  right:70px;
+  border-radius:5%;
+}
