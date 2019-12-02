@@ -1,0 +1,52 @@
+section {
+    background-color:rgb(212,154,106);    
+}
+#grid-flex{display:flex;  
+flex-wrap:wrap;
+}
+h1{font-family:fantasy;
+text-decoration: underline;
+text-align: center;}
+h2{font-family:fantasy;
+padding: 15px 15px 15px 60px;
+background: url(images/heart.png) no-repeat 225px;
+background-size: contain;}
+
+ul{list-style:none;}
+p{font-family: Arial, Helvetica, sans-serif;}
+img{border: 1px black solid}
+img:hover{transform: scale(1.5);}
+
+@media screen and (max-width:480px){
+.grid-item{flex-basis:calc(50% - 80px);
+padding:30px;
+margin:10px;}
+
+.grid-item img{width:100%;}
+
+.grid-item:first-child{flex-basis:calc(100% - 80px);
+background-color:rgb(34,102,102);}
+}
+
+@media screen and (min-width:481px) and (max-width:800px){
+.grid-item{flex-basis:calc(33% - 80px);
+padding:30px;
+margin:10px;}
+
+.grid-item img{width:100%;}
+
+.grid-item:nth-child(-n+2){flex-basis:calc(45% - 80px);
+background-color:rgb(34,102,102);}
+}
+
+@media screen and (min-width:801px){
+.grid-item{flex-basis:calc(25% - 80px);
+    padding:30px;
+    margin:10px;
+}
+    
+.grid-item img{width:100%;}
+
+.grid-item:first-child{flex-basis:calc(50% - 80px);
+    background-color:rgb(34,102,102);}    
+}
